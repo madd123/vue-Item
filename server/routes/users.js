@@ -79,6 +79,7 @@ router.post('/logout', function(req, res, next) {
     })
 })
 
+
 router.post("/cartList", function(req, res, next) {
     let userId = req.cookies.userId;
     User.findOne({ userId: userId }, function(err, doc) {
@@ -92,3 +93,4 @@ router.post("/cartList", function(req, res, next) {
     })
 })
 module.exports = router;
+
